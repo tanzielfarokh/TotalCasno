@@ -79,12 +79,6 @@ class MainActivity : ComponentActivity() {
                         slotCount = slotCount,
                         symbols = theme.symbols,
                         onStartRequested = {
-                            if (!isLoading) {
-                                isLoading = true
-                                fetchServerData { 
-                                    isLoading = false
-                                }
-                            }
                         },
                         onSettingsClick = {
                             showSettings = true
