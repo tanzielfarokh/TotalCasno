@@ -145,7 +145,6 @@ fun SlotMachineScreen(
                                 delay(500)
                                 isRolling = false
                                 matchResult = checkMatches(slotValues, slotCount)
-                                onStartRequested()
                             }
                         }
                     },
@@ -338,4 +337,3 @@ fun SlotReel(
         )
     }
 }
-
